@@ -58,27 +58,29 @@ platforms:
     - id: "toutiao"
       name: "今日头条"
     - id: "baidu"
-      name: "百度热搜"
-    - id: "wallstreetcn-hot"
       name: "华尔街见闻"
     - id: "thepaper"
       name: "澎湃新闻"
-    - id: "bilibili-hot-search"
-      name: "bilibili 热搜"
     - id: "cls-hot"
       name: "财联社热门"
     - id: "ifeng"
       name: "凤凰网"
-    - id: "tieba"
-      name: "贴吧"
-    - id: "weibo"
-      name: "微博"
-    - id: "douyin"
-      name: "抖音"
     - id: "zhihu"
       name: "知乎"
-
-
+    - id: "xueqiu"
+      name: "雪球"
+    - id: "jin10"
+      name: "金十数据"
+    - id: "zaobao"
+      name: "联合早报"
+    - id: "github"
+      name: "GitHub"
+    - id: "hackernews"
+      name: "Hacker News"
+    - id: "v2ex"
+      name: "V2EX"
+    - id: "producthunt"
+      name: "ProductHunt"
 
 # ===============================================================
 # 3. 数据源 - RSS 订阅
@@ -114,18 +116,38 @@ rss:
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
     - id: "hacker-news"
-      name: "Hacker News"
+      name: "HackerNews"
       url: "https://hnrss.org/frontpage"
 
     - id: "ruanyifeng"
       name: "阮一峰的网络日志"
       url: "http://www.ruanyifeng.com/blog/atom.xml"
-      enabled: false                  # 禁用
+      enabled: true                  # 禁用
       # max_age_days: 3               # 示例：推送 3 天内的文章（更新较慢的博客）
      
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
+
+    - id: "HuffPost"
+      name: "HuffPost"
+      url: "https://www.huffpost.com/section/world-news/feed"
+      max_age_days: 1
+
+    - id: "NYT"
+      name: "纽约时报"
+      url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+      max_age_days: 1
+
+    - id: "FOX News"
+      name: "福克斯"
+      url: "http://feeds.foxnews.com/foxnews/latest"
+      max_age_days: 1
+
+    - id: "washingtonpost"
+      name: "华盛顿邮报"
+      url: "http://feeds.washingtonpost.com/rss/world"
+      max_age_days: 1    
 
     # 自定义源示例
     # - id: "custom-feed"
